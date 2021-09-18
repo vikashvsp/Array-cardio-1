@@ -70,6 +70,17 @@
 
       const fullName=inventors.map(inventor => `${inventor.first} ${inventor.last}`)
       console.log(fullName)
+
+      const ordered= inventors.sort(function(a,b){
+          if(a.year>b.year){
+              return 1;
+          } else {
+              return -1;
+          }
+      })
+      console.table(ordered)
+
+      
       const data = [
         "car",
         "car",
