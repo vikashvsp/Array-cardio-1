@@ -85,6 +85,12 @@
           return lastguy > nextguy ? -1:1;
       })
       console.table(oldest)
+
+      //use in a website of wikipedia
+
+      const category=document.querySelector('.mw-category');
+      const links=[...category.querySelectorAll('a')];
+      const de=links.map(link=>link.textContent).filter(treetname=>streetName.includes('de'))
       const data = [
         "car",
         "car",
